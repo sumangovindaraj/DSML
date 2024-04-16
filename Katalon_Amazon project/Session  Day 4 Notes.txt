@@ -1,0 +1,111 @@
+--> Base line documents consists of requirements( FRS/SRS/CRS/BRS) --> Analysis of SDLC-->copy is given to testing people -->study these baseline documents
+
+types of requirements: 
+    1) Functional Requirements:
+        --> No. if inputs( Ex: gmail_Login : useid, pwd  = 2)
+        ---> No of outputs ( land of inbox =1)
+        --> No of internal files ( DB files = 2)
+        ---> No of External files (No external files:0)
+       ---> No of enquiries (Search options =0)
+Flow of Gmail_Login (Steps)
+   
+1) Launuch the browser     Inputs/Test Data :(Ex: chrome/firefox/edge/IE/Safari)
+2) Give URL    inputs/Test Data:(http://www.gmail.com)
+3) Enter valid useid : mamatha@gmail.com  (Testdata)
+4) Enter valid password:XXXXXX
+5) Click on OK button
+
+Checking above functionality is called functional testing/black box testing/GUI testing
+
+Ex:UFT,QTP, katalop, Selenium, RFT etc... 
+
+    
+    2) Non-functional requirements:
+    
+--> performance
+    ex: load time, response time
+
+Techniquces:
+   1) load testing: Gradually increasing the load and testing the application performance is called the load testing
+   2) Stress testing:Testing application at peak level loads is called stress testing
+   3) Spike testing: Suddenly flooding huge amounts of loads and testing the application performance is called spike testing
+   4)Volume testing: DB/backend testing (Huge data (1 tera) when your trying to delete/update/create)
+
+Automation tools : Ex: load runner, JMeter (Open source) etc...
+
+    3)System requirements
+    4)Customer requirements
+
+
+Regression Testing:
+
+Def: Testing Modified build is called regression testing
+
+Types:
+
+1) Re-Test All
+2) Selection based regression testing: 
+--> selecting Test cases from BVA (Boundary value analysis),EP(Equivalence partition), Prioritized TC, frequently used features/bugs, complex features
+ 
+3) Prioritized regression testing: 
+  
+
+    Analysis : After gathering requiremnts--> each requiremtns is given a uniqueID, also give priority 
+
+RTM's (Requirement tracebility matrix)
+
+Acceptance Tesiting;
+
+1) Alpha Testing: 
+--> Company site
+-->people involved in alpha testing: developer,PM, BA's
+--> controlled environment 
+--> customer invited to company to demonstrate the s/w
+
+2) Beta Testing: 
+-->Customer site
+---> S/w is installed at customer environment
+--> No company people are involved 
+---> beta testing happened no-controlled environment
+--> Customer can use the s/w as his own and give his feedback to company
+
+
+Beta version
+Stable version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

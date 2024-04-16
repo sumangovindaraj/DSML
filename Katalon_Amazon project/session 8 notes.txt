@@ -1,0 +1,336 @@
+Test case:
+----------
+
+Def: Step-by-step instructions to check a specific requirement is called a test case.
+
+specific requirement/module/feature: Ex: Gmail_Login
+Step by step instructions: 
+  1) Launch the browser
+  2) Give the URl
+  3) Landed on the GamilLogin page successfully
+  4) 
+    4.1)Enter Valid UserID:
+    4.2) Enter valid Passsword:
+    4.3) Click on OK button
+  5) Successfully should land on Inbox
+  6) Close browser
+
+--> **One test case can have more than one steps.
+
+How to Write the test case:
+---------------------------
+---> Test case is a document,which has the step by step instructions to repeat the user requirements on AUT ( Application Under Test) for positive and negative test conditions.
+
+Activity :  Test Design  + Test Execution (On AUT)
+ 
+---> Recommended that test design should be done before coding (it is enough to  have your requirements freezed)  + Test execution can be done after coding (Build is ready )
+
+--> In agile, requirements go on changing
+
+Test Design/Test case Development:
+----------------------------------
+1) Understand the rquirements : Analyzing the rquirements from baseline documents (SRS/FRS/BRS)
+
+Testing Team_01: Gmail_Login ---> specificaiton are there in SRS/FRS 
+
+Specifications:
+
+UserId: 1) Minimum 4 characters and Maximum 20 character
+        2) Should not start with special character (!@#$%^&*)
+ 	3) Userid should not start with number (1234567890)
+	4) Userid should start with alphabets
+        5) Userid should start with alphabets follow any numbers
+        6) Userid should be small letter
+
+Password: 1) Passsword should have minimum 5 characters and maximum 20 characters
+   	  2) Password should start with alphabets
+          3) Password should start with alphabets follow any one number and one special character   	     is must
+          4) Password should not start with any special characters  
+
+Functionality : (Accetance Criteria)
+-------------
+ 1) Lauch the browser
+ 2) Give the URl
+ 3) Landed on GamilLogin page successfully
+ 4) 
+    4.1)Enter Valid UserID:
+    4.2) Enter valid Passsword:
+    4.3) Click on Ok button
+  5) Successfully should land on Inbox
+  6) Close browser
+
+2) Identify the testable requirements ---> Identify the test scenario's
+   -----------------------------------
+  
+Ex: Validation of Gmail_Login
+
+3) Test Case design techniques:  Effective mechanism to write the test cases as per the test 
+  ----------------------------
+conditions.
+---> short way to write test case ---> " Minimum test cases with maximum test coverage"
+---> Avoid Exhausive approch of testing on AUT with different combinations of valid and invalid test data (Executing all possible combination of your test cases)
+
+Ex: Gmail_Login:
+ 
+Specifications:
+
+UserId: 1) Minimum 4 characters and Maximum 20 character
+
+Test Data :
+Positive Testcase:
+
+1) mam1@gmail.com   --> 4 characters
+2) mamat@gmail.com  --> 5 
+3) mamath@gmail.com  ---> 6 character
+4) mamatha@gmail.com  ---> 7 character
+---
+--- 
+--- 
+17) mamatha1234567897356688@gmail.com
+
+Negative Test cases:
+ 
+1) Less than 4 character  ---> mam@gmail.com
+2) More than 20 character ---> mamamamam12345678123456786@gmail.com
+
+
+-----> In order to overcome above exhausive testing process, we are using the techniques as below:
+ 1) BVA (Boundary Value Analysis):
+----------------------------------
+
+Specifications:
+UserId: 1) Minimum 4 characters and Maximum 20 character
+
+1) Minimum      --> mam1@gmail.com
+2) Minimum +1   --> mamat@gmail.com
+3) Minimum -1   --> mam@gmail.com
+4) Average      --> mamatha1@gmail.com
+5) Maximum      --> mamamamam12345678123456786@gmail.com
+6) Maximum +1	--> mamamamam123456781234567861@gmail.com
+7) Maximum -1	--> mamamamam1234567812345678@gmail.com
+
+" Minimum test cases with maximum test coverage"
+
+2) Equivallence Partition: Partitioning equally into two parts  1) valid  2) invalid
+--------------------------
+
+---------------------------------------------------------------------------
+Valid			                           Invalid
+-------------------------------------------------------------------------------
+mam1@gmail.com					mam@gmail.com					
+mamat@gmail.com					mamamamam123456781234567861@gmail.com
+mamatha1@gmail.com
+mamat@gmail.com
+mamamamam1234567812345678@gmail.com
+mamamamam12345678123456786@gmail.com
+
+3) Decision Table: Helps is designing your test cases
+------------------
+
+--> Decision table is create from cause effect graph-->DT
+
+---> 4 areas
+   1) Conditon Entry
+   2) Conditon Stub
+   3) Action Entry
+   4) Action Stud
+
+---> Whenever they are testing any AUT, by default BVA, EP and DT are included in test plan.
+
+1) Understand requirements
+2) Creare Scenarios
+3) Write test case as per the template
+
+Test Scenario: Validate the amazon application to search an item
+
+Steps:
+1) Launch Browser
+2) Give the URL
+3) Select the Category
+4) enter the item to be search
+5) click on magnifier button
+
+Expected output: Corresponding items should be display
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+  
+
+
+
+ 
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

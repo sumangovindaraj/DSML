@@ -1,0 +1,26 @@
+// Katalon cura health servive
+//Steps
+//Open Browser
+WebUI.openBrowser('')
+
+// Give the URL
+WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com')
+
+// click on make appointment
+WebUI.click(findTestObject('Object Repository/CURA_Pages_OR/Page_CURA Healthcare Service/a_Make Appointment'))
+
+// set User name
+WebUI.setText(findTestObject('Object Repository/CURA_Pages_OR/Page_CURA Healthcare Service/input_Username_username'), 'John Doe')
+
+// set password
+WebUI.setText(findTestObject('Object Repository/CURA_Pages_OR/Page_CURA Healthcare Service/input_Password_password'), 'ThisIsNotAPassword')
+
+// click on login button
+WebUI.click(findTestObject('Object Repository/CURA_Pages_OR/Page_CURA Healthcare Service/button_Login'))
+
+// verify the make appointment element is present
+WebUI.verifyElementPresent(findTestObject('Object Repository/CURA_Pages_OR/Page_CURA Healthcare Service/h2_Make Appointment'), 
+    0)
+
+// close browser
+WebUI.closeBrowser()
