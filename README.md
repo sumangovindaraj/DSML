@@ -1,2 +1,2 @@
-# DSMl
+# DSML
 DataScience Machine Learning
